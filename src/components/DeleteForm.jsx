@@ -31,7 +31,7 @@ export default class DeleteForm extends Component {
 
             <form>
             <div>
-                <p>Enter id number you want to delete</p>
+                <p>Enter id number of wine you want to delete</p>
                 <input type="text" name='delete' value={this.state.delete} onChange={this.onChangeHandler}/>
             </div>
             <button type="submit" onClick={this.deleteHandler}>Delete</button>      

@@ -64,7 +64,10 @@ export default class PostForm extends Component {
                         <p>price</p>
                         <input type="text" name='price' value={price} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><button type="submit">Add wine</button></div>
+                    <div>
+                        <p>Click on a button to add wine</p>
+                        <button type="submit">Add</button>
+                    </div>
                 </form>
                 
             </div>
