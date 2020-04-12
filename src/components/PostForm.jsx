@@ -35,30 +35,37 @@ export default class PostForm extends Component {
         const {name, year, grapes, country, region, description, price} = this.state;
         return (
             <div>
-                <form onSubmit={this.submitHandler} action="post" method="post">
-                    <div><p>name</p>
+                <form className="main_postForm" onSubmit={this.submitHandler} action="post" method="post">
+                    <div>
+                        <p>name</p>
                         <input type="text" name='name' value={name} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>year</p>
+                    <div>
+                        <p>year</p>
                         <input type="text" name='year' value={year} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>grapes</p>
+                    <div>
+                        <p>grapes</p>
                         <input type="text"name='grapes' value={grapes} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>country</p>
+                    <div>
+                        <p>country</p>
                         <input type="text" name='country' value={country} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>region</p>
+                    <div>
+                        <p>region</p>
                         <input type="text" name='region' value={region} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>description</p>
+                    <div>
+                        <p>description</p>
                         <input type="text" name='description' value={description} onChange={this.onChangeHandler}/>
                     </div>
-                    <div><p>price</p>
+                    <div>
+                        <p>price</p>
                         <input type="text" name='price' value={price} onChange={this.onChangeHandler}/>
                     </div>
-                    <button type="submit">Submit</button>
                 </form>
+                <button type="submit">Submit</button>
             </div>
         )
     }
