@@ -88,8 +88,8 @@ button:hover {
 }
 input {
   height: 2rem;
-  width: 6rem;
-  font-size: 1.5rem;
+  width: 12rem;
+  font-size: 1.1rem;
   border-radius: 14px;
   background-color: rgb(180, 176, 176);
   margin: 1vh;
