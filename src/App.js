@@ -48,11 +48,11 @@ componentDidMount() {
       <div className="main_postForm">
         <div className="postForm">
           {this.state.add ? <PostForm /> : null}
-          <button type="submit" onClick={() =>{this.setState({add: !this.state.add})}}>Add wine</button>
+          <button type="submit" onClick={() =>{this.setState({add: !this.state.add})}}>Open/Close add form</button>
         </div>
         <div className="postForm">
           {this.state.delete ? <DeleteForm /> : null}
-          <button type="submit" onClick={() =>{this.setState({delete: !this.state.delete})}}>Delete wine</button>
+          <button type="submit" onClick={() =>{this.setState({delete: !this.state.delete})}}>Open/Close delete form</button>
         </div>
       </div>
       <div className='mainDiv' >
